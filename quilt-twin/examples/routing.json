@@ -1,0 +1,299 @@
+{
+  "note": "routing-lens results over the real-scan twin (45 nodes / 55 edges) from test-roomplan.json",
+  "near": {
+    "query": "near",
+    "from": {
+      "id": "cell:room:feee767661",
+      "label": "bedroom"
+    },
+    "radius": 400.0,
+    "units": "cm",
+    "hits": [
+      {
+        "id": "cell:furniture:277a605aed",
+        "kind": "furniture",
+        "label": "object",
+        "graphDist": 67.7,
+        "euclidDist": 67.7
+      },
+      {
+        "id": "cell:furniture:1ac1c0b4ea",
+        "kind": "furniture",
+        "label": "object",
+        "graphDist": 132.5,
+        "euclidDist": 132.5
+      },
+      {
+        "id": "cell:furniture:51a43734fb",
+        "kind": "furniture",
+        "label": "object",
+        "graphDist": 167.8,
+        "euclidDist": 167.8
+      },
+      {
+        "id": "cell:furniture:bab9938149",
+        "kind": "furniture",
+        "label": "object",
+        "graphDist": 192.0,
+        "euclidDist": 192.0
+      },
+      {
+        "id": "cell:furniture:46ff2c5689",
+        "kind": "furniture",
+        "label": "object",
+        "graphDist": 193.4,
+        "euclidDist": 193.4
+      },
+      {
+        "id": "cell:furniture:dcdda71149",
+        "kind": "furniture",
+        "label": "object",
+        "graphDist": 214.1,
+        "euclidDist": 214.1
+      },
+      {
+        "id": "cell:door:a61017f724",
+        "kind": "door",
+        "label": "door",
+        "graphDist": 249.8,
+        "euclidDist": 249.8
+      },
+      {
+        "id": "cell:wall:ab1bb866a7",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 360.3,
+        "euclidDist": 180.7
+      },
+      {
+        "id": "cell:wall:22a11262cc",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 361.3,
+        "euclidDist": 227.5
+      },
+      {
+        "id": "cell:wall:9c2243ea4a",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 361.3,
+        "euclidDist": 360.3
+      },
+      {
+        "id": "cell:wall:2404060e5e",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 361.3,
+        "euclidDist": 221.9
+      },
+      {
+        "id": "cell:wall:b5b071f3ac",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 361.3,
+        "euclidDist": 209.4
+      },
+      {
+        "id": "cell:wall:1adb743dae",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 362.3,
+        "euclidDist": 176.4
+      },
+      {
+        "id": "cell:wall:5c4292f714",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 362.3,
+        "euclidDist": 226.3
+      },
+      {
+        "id": "cell:wall:978c3a7400",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 362.3,
+        "euclidDist": 439.0
+      },
+      {
+        "id": "cell:wall:cb23bc36d2",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 362.3,
+        "euclidDist": 278.3
+      },
+      {
+        "id": "cell:wall:962d376294",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 362.3,
+        "euclidDist": 273.4
+      },
+      {
+        "id": "cell:wall:91fba4729d",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 363.3,
+        "euclidDist": 294.9
+      },
+      {
+        "id": "cell:wall:170c7252b6",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 363.3,
+        "euclidDist": 458.7
+      },
+      {
+        "id": "cell:wall:8850b387b3",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 364.3,
+        "euclidDist": 561.0
+      },
+      {
+        "id": "cell:wall:04354a48b5",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 364.3,
+        "euclidDist": 362.9
+      },
+      {
+        "id": "cell:wall:dc785704ba",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 364.3,
+        "euclidDist": 447.1
+      },
+      {
+        "id": "cell:wall:8883291f8d",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 365.3,
+        "euclidDist": 454.4
+      },
+      {
+        "id": "cell:wall:8e095c8636",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 365.3,
+        "euclidDist": 446.1
+      },
+      {
+        "id": "cell:wall:eb82f61820",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 365.3,
+        "euclidDist": 569.6
+      },
+      {
+        "id": "cell:wall:23e54aea27",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 366.3,
+        "euclidDist": 521.3
+      },
+      {
+        "id": "cell:wall:45605f57cd",
+        "kind": "wall",
+        "label": "wall",
+        "graphDist": 366.3,
+        "euclidDist": 489.1
+      },
+      {
+        "id": "cell:room:790b13edff",
+        "kind": "room",
+        "label": "unidentified",
+        "graphDist": 367.3,
+        "euclidDist": 366.9
+      }
+    ]
+  },
+  "route_bedroom_to_bathroom": {
+    "query": "route",
+    "from": {
+      "id": "cell:room:feee767661",
+      "label": "bedroom"
+    },
+    "to": {
+      "id": "cell:room:7e1e6405a1",
+      "label": "bathroom"
+    },
+    "reachable": true,
+    "portalDist": 694.9,
+    "units": "cm",
+    "path": [
+      {
+        "id": "cell:room:feee767661",
+        "kind": "room",
+        "label": "bedroom"
+      },
+      {
+        "id": "cell:door:a61017f724",
+        "kind": "door",
+        "label": "door"
+      },
+      {
+        "id": "cell:room:790b13edff",
+        "kind": "room",
+        "label": "unidentified"
+      },
+      {
+        "id": "cell:door:d6ea820988",
+        "kind": "door",
+        "label": "door"
+      },
+      {
+        "id": "cell:room:7e1e6405a1",
+        "kind": "room",
+        "label": "bathroom"
+      }
+    ]
+  },
+  "route_bedroom2_to_bedroom1": {
+    "query": "route",
+    "from": {
+      "id": "cell:room:a7507b32d3",
+      "label": "bedroom"
+    },
+    "to": {
+      "id": "cell:room:feee767661",
+      "label": "bedroom"
+    },
+    "reachable": true,
+    "portalDist": 748.7,
+    "units": "cm",
+    "path": [
+      {
+        "id": "cell:room:a7507b32d3",
+        "kind": "room",
+        "label": "bedroom"
+      },
+      {
+        "id": "cell:door:182df6c372",
+        "kind": "door",
+        "label": "door"
+      },
+      {
+        "id": "cell:room:790b13edff",
+        "kind": "room",
+        "label": "unidentified"
+      },
+      {
+        "id": "cell:door:a61017f724",
+        "kind": "door",
+        "label": "door"
+      },
+      {
+        "id": "cell:room:feee767661",
+        "kind": "room",
+        "label": "bedroom"
+      }
+    ]
+  },
+  "route_furniture_negative": {
+    "query": "route",
+    "from": "cell:furniture:51a43734fb",
+    "to": "cell:room:7e1e6405a1",
+    "reachable": false,
+    "note": "no passable portal path (walls without doors block movement)"
+  }
+}

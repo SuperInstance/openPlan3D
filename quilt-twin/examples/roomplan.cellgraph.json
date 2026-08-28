@@ -1,0 +1,1610 @@
+{
+  "format": "quilt-cellgraph/1",
+  "source": {
+    "tool": "openplan3d-quilt-twin",
+    "inputKind": "roomplan",
+    "input": "test-roomplan.json",
+    "generatedAt": "2026-08-28T05:23:04Z"
+  },
+  "opcodeMap": {
+    "BIND": "instantiate object (draw wall / place furniture)",
+    "LINK": "parent / constraint (door\u2192wall hosting, room bounds, joins)",
+    "EFFECT": "transform (move / rotate / resize / recolor)",
+    "VIEW": "render / camera (plan2d, walk3d, svg/dxf/pdf/png export)",
+    "TICK": "physics / sim step (walkthrough, version-history snapshots)",
+    "FORGET": "delete (wall delete cascades along hosted-in edges)"
+  },
+  "nodes": [
+    {
+      "id": "cell:room:feee767661",
+      "kind": "room",
+      "story": 0,
+      "geometry": {
+        "position": [
+          229.14,
+          -441.98,
+          0.0
+        ]
+      },
+      "attrs": {
+        "label": "bedroom",
+        "confidence": 0.0
+      },
+      "telemetry": {
+        "source": "roomplan-section"
+      }
+    },
+    {
+      "id": "cell:room:a7507b32d3",
+      "kind": "room",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -174.13,
+          -492.99,
+          0.0
+        ]
+      },
+      "attrs": {
+        "label": "bedroom",
+        "confidence": 0.0
+      },
+      "telemetry": {
+        "source": "roomplan-section"
+      }
+    },
+    {
+      "id": "cell:room:7e1e6405a1",
+      "kind": "room",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -199.6,
+          -201.75,
+          0.0
+        ]
+      },
+      "attrs": {
+        "label": "bathroom",
+        "confidence": 0.0
+      },
+      "telemetry": {
+        "source": "roomplan-section"
+      }
+    },
+    {
+      "id": "cell:room:790b13edff",
+      "kind": "room",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -5.17,
+          -159.69,
+          0.0
+        ]
+      },
+      "attrs": {
+        "label": "unidentified",
+        "confidence": 0.0
+      },
+      "telemetry": {
+        "source": "roomplan-section"
+      }
+    },
+    {
+      "id": "cell:wall:1adb743dae",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          405.52,
+          -437.88,
+          122.05
+        ],
+        "points": [
+          [
+            398.85,
+            -664.77
+          ],
+          [
+            412.18,
+            -210.99
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "F32E583A-A7F7-4BAB-8D43-EE0FBD929240"
+      },
+      "telemetry": {
+        "length": 453.98,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:22a11262cc",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          237.21,
+          -214.67,
+          122.05
+        ],
+        "points": [
+          [
+            412.18,
+            -210.99
+          ],
+          [
+            62.23,
+            -218.35
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "7C467A1C-1929-449F-A905-CB08AC41ABF9"
+      },
+      "telemetry": {
+        "length": 350.03,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:5c4292f714",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          231.31,
+          -668.29,
+          122.05
+        ],
+        "points": [
+          [
+            63.78,
+            -671.82
+          ],
+          [
+            398.85,
+            -664.77
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "2B2D853D-4E1C-4FAB-999A-A5EC0A35ECDF"
+      },
+      "telemetry": {
+        "length": 335.15,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:170c7252b6",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -172.88,
+          -662.81,
+          122.05
+        ],
+        "points": [
+          [
+            -336.71,
+            -658.0
+          ],
+          [
+            -9.05,
+            -667.62
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "CFE966D4-D2C3-4B06-8367-0CC44DCB842E"
+      },
+      "telemetry": {
+        "length": 327.8,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:9c2243ea4a",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          58.26,
+          -124.78,
+          122.05
+        ],
+        "points": [
+          [
+            62.23,
+            -218.35
+          ],
+          [
+            54.3,
+            -31.2
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "6E9996F1-6925-43F9-A62A-A63A05DE1F1D"
+      },
+      "telemetry": {
+        "length": 187.32,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:eb82f61820",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -231.19,
+          -106.52,
+          122.05
+        ],
+        "points": [
+          [
+            -141.96,
+            -109.14
+          ],
+          [
+            -320.43,
+            -103.9
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "9DD80430-D5E7-4A44-9E9B-5A1676B47FB0"
+      },
+      "telemetry": {
+        "length": 178.55,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:978c3a7400",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          76.77,
+          -30.25,
+          149.73
+        ],
+        "points": [
+          [
+            99.24,
+            -29.3
+          ],
+          [
+            54.3,
+            -31.2
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "43DFC1BC-2373-4918-9CC6-CC765E977068"
+      },
+      "telemetry": {
+        "length": 44.98,
+        "height": 299.46
+      }
+    },
+    {
+      "id": "cell:wall:45605f57cd",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -142.39,
+          -123.95,
+          122.05
+        ],
+        "points": [
+          [
+            -142.83,
+            -138.76
+          ],
+          [
+            -141.96,
+            -109.14
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "B0E0C60D-0E90-4644-A6C4-30E000F103DA"
+      },
+      "telemetry": {
+        "length": 29.63,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:23e54aea27",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -98.82,
+          -36.78,
+          122.05
+        ],
+        "points": [
+          [
+            -59.84,
+            -37.93
+          ],
+          [
+            -137.81,
+            -35.64
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "29909550-B3CA-4003-8640-C2F1123CB033"
+      },
+      "telemetry": {
+        "length": 78.0,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:2404060e5e",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          66.11,
+          -592.55,
+          122.05
+        ],
+        "points": [
+          [
+            63.78,
+            -671.82
+          ],
+          [
+            68.44,
+            -513.28
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "29221455-B140-4FD6-804D-70B3BDA2F2DD"
+      },
+      "telemetry": {
+        "length": 158.61,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:cb23bc36d2",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -6.76,
+          -589.57,
+          122.05
+        ],
+        "points": [
+          [
+            -9.05,
+            -667.62
+          ],
+          [
+            -4.47,
+            -511.52
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "24D4AECE-B6CA-4FB5-A411-BCB588A26CE6"
+      },
+      "telemetry": {
+        "length": 156.17,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:962d376294",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -35.47,
+          -510.61,
+          122.05
+        ],
+        "points": [
+          [
+            -66.46,
+            -509.7
+          ],
+          [
+            -4.47,
+            -511.52
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "12458943-104D-48D9-9A0C-4DFFC04271B5"
+      },
+      "telemetry": {
+        "length": 62.02,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:b5b071f3ac",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          31.98,
+          -512.4,
+          122.05
+        ],
+        "points": [
+          [
+            -4.47,
+            -511.52
+          ],
+          [
+            68.44,
+            -513.28
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "18BB855F-3114-4129-9D4C-91AF99860401"
+      },
+      "telemetry": {
+        "length": 72.92,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:04354a48b5",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -57.95,
+          -220.03,
+          122.05
+        ],
+        "points": [
+          [
+            -55.64,
+            -141.32
+          ],
+          [
+            -60.27,
+            -298.73
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "BD8140CF-F820-4A11-A252-5D7A9EA467BD"
+      },
+      "telemetry": {
+        "length": 157.48,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:8883291f8d",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -57.74,
+          -89.62,
+          122.05
+        ],
+        "points": [
+          [
+            -59.84,
+            -37.93
+          ],
+          [
+            -55.64,
+            -141.32
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "558EB7D4-3E73-44DD-A982-65271FD61B99"
+      },
+      "telemetry": {
+        "length": 103.48,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:8e095c8636",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -99.23,
+          -140.04,
+          122.05
+        ],
+        "points": [
+          [
+            -55.64,
+            -141.32
+          ],
+          [
+            -142.83,
+            -138.76
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "958B182E-6962-405E-B1F3-CDD39EEFC910"
+      },
+      "telemetry": {
+        "length": 87.23,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:8850b387b3",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -328.57,
+          -380.95,
+          122.05
+        ],
+        "points": [
+          [
+            -320.43,
+            -103.9
+          ],
+          [
+            -336.71,
+            -658.0
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "8BFAA702-AE5A-4523-8DDB-DBB6300B689B"
+      },
+      "telemetry": {
+        "length": 554.34,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:ab1bb866a7",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          65.33,
+          -365.81,
+          122.05
+        ],
+        "points": [
+          [
+            68.44,
+            -513.28
+          ],
+          [
+            62.23,
+            -218.35
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "1D9273E8-31FB-43A5-88EC-4B7DF23A924A"
+      },
+      "telemetry": {
+        "length": 294.99,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:dc785704ba",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -193.1,
+          -294.83,
+          122.05
+        ],
+        "points": [
+          [
+            -60.27,
+            -298.73
+          ],
+          [
+            -325.92,
+            -290.93
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "F37F6310-6647-46DC-9585-D76F97461DF0"
+      },
+      "telemetry": {
+        "length": 265.77,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:wall:91fba4729d",
+      "kind": "wall",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -63.37,
+          -404.21,
+          122.05
+        ],
+        "points": [
+          [
+            -60.27,
+            -298.73
+          ],
+          [
+            -66.46,
+            -509.7
+          ]
+        ]
+      },
+      "attrs": {
+        "label": "wall",
+        "roomplan-category": "",
+        "origin": "79E48703-5BF6-45E5-ADA6-70CD4B6AEE03"
+      },
+      "telemetry": {
+        "length": 211.06,
+        "height": 244.11
+      }
+    },
+    {
+      "id": "cell:door:d6ea820988",
+      "kind": "door",
+      "story": 0,
+      "geometry": {
+        "position": [
+          60.03,
+          -166.48,
+          101.75
+        ]
+      },
+      "attrs": {
+        "label": "door",
+        "roomplan-category": "",
+        "origin": "2395B51C-9BB1-47DC-A9EC-D9E86A5FDF4A"
+      },
+      "telemetry": {
+        "width": 72.41
+      }
+    },
+    {
+      "id": "cell:door:42b340b880",
+      "kind": "door",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -272.69,
+          -292.49,
+          103.95
+        ]
+      },
+      "attrs": {
+        "label": "door",
+        "roomplan-category": "",
+        "origin": "3B242632-3B5D-4479-B0F7-EE9F087F6063"
+      },
+      "telemetry": {
+        "width": 75.08
+      }
+    },
+    {
+      "id": "cell:door:182df6c372",
+      "kind": "door",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -61.95,
+          -355.96,
+          102.3
+        ]
+      },
+      "attrs": {
+        "label": "door",
+        "roomplan-category": "",
+        "origin": "D928FED8-FDB9-42C9-94E4-F1733639668B"
+      },
+      "telemetry": {
+        "width": 72.98
+      }
+    },
+    {
+      "id": "cell:door:a61017f724",
+      "kind": "door",
+      "story": 0,
+      "geometry": {
+        "position": [
+          63.01,
+          -255.37,
+          102.02
+        ]
+      },
+      "attrs": {
+        "label": "door",
+        "roomplan-category": "",
+        "origin": "CC03B1F6-7B4E-403F-B067-037E615CF344"
+      },
+      "telemetry": {
+        "width": 63.38
+      }
+    },
+    {
+      "id": "cell:window:9bbc1e3974",
+      "kind": "window",
+      "story": 0,
+      "geometry": {
+        "position": [
+          409.98,
+          -285.94,
+          45.01
+        ]
+      },
+      "attrs": {
+        "label": "window",
+        "roomplan-category": "",
+        "origin": "EF12D679-D6A9-4161-A08E-BE10539D4725"
+      },
+      "telemetry": {
+        "width": 89.17
+      }
+    },
+    {
+      "id": "cell:window:1de36a9868",
+      "kind": "window",
+      "story": 0,
+      "geometry": {
+        "position": [
+          138.94,
+          -670.24,
+          45.37
+        ]
+      },
+      "attrs": {
+        "label": "window",
+        "roomplan-category": "",
+        "origin": "005270E1-FB59-404A-8BA7-E80C10C0A3AF"
+      },
+      "telemetry": {
+        "width": 90.52
+      }
+    },
+    {
+      "id": "cell:window:4301b6d990",
+      "kind": "window",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -89.14,
+          -665.27,
+          42.7
+        ]
+      },
+      "attrs": {
+        "label": "window",
+        "roomplan-category": "",
+        "origin": "A129AAEA-E906-4116-8288-DEE440AD47BD"
+      },
+      "telemetry": {
+        "width": 84.14
+      }
+    },
+    {
+      "id": "cell:window:c9a429b4dd",
+      "kind": "window",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -332.11,
+          -501.3,
+          39.45
+        ]
+      },
+      "attrs": {
+        "label": "window",
+        "roomplan-category": "",
+        "origin": "09CB9D7A-5C59-42BF-B893-4B981C59D9A2"
+      },
+      "telemetry": {
+        "width": 92.9
+      }
+    },
+    {
+      "id": "cell:furniture:51a43734fb",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          226.87,
+          -609.77,
+          -105.96
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "BBB9A50C-E0FF-4713-B18E-FA3DA9DFB34C"
+      },
+      "telemetry": {
+        "dimensions": [
+          61.9,
+          85.2,
+          68.2
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:1ac1c0b4ea",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          97.55,
+          -426.41,
+          -114.65
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "6C5E09E9-72B8-44E9-B604-91F5921E5DBC"
+      },
+      "telemetry": {
+        "dimensions": [
+          119.0,
+          67.8,
+          49.2
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:dcdda71149",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          373.73,
+          -284.07,
+          -119.41
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "00C8C811-3ACC-42F0-BFA2-863000E7174E"
+      },
+      "telemetry": {
+        "dimensions": [
+          65.4,
+          58.3,
+          57.5
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:12006a9ce5",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -192.94,
+          -136.65,
+          -104.08
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "E2D6A20A-28D2-4655-8243-793862F7AD62"
+      },
+      "telemetry": {
+        "dimensions": [
+          100.3,
+          89.0,
+          58.0
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:b3402b57dd",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -180.23,
+          -318.7,
+          -105.36
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "F92C21C0-06AB-4000-8E1C-97DB930ACA2A"
+      },
+      "telemetry": {
+        "dimensions": [
+          84.9,
+          86.4,
+          47.0
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:c53e254438",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          5.77,
+          -470.09,
+          -107.79
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "A761DA62-85BE-4CF0-BF49-77C0E04B829F"
+      },
+      "telemetry": {
+        "dimensions": [
+          119.5,
+          81.6,
+          82.8
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:ad64598e94",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -217.74,
+          -553.05,
+          -121.4
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "2CFCE890-593D-4153-BB9B-896EA2BF0D6A"
+      },
+      "telemetry": {
+        "dimensions": [
+          171.4,
+          54.3,
+          216.8
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:b2cebb193e",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -196.06,
+          -133.35,
+          -65.81
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "C0FD5F23-98F9-4BF6-B413-DCED282947B7"
+      },
+      "telemetry": {
+        "dimensions": [
+          60.8,
+          12.4,
+          45.6
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:5133bb69eb",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -280.28,
+          -130.45,
+          -104.88
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "0A8DCDA5-7796-4548-B3C0-69149EC5E546"
+      },
+      "telemetry": {
+        "dimensions": [
+          41.9,
+          87.4,
+          50.7
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:bab9938149",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          227.38,
+          -633.95,
+          -110.38
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "9B859D33-E365-4968-B8BA-2F9BBE25EF97"
+      },
+      "telemetry": {
+        "dimensions": [
+          152.2,
+          76.4,
+          68.8
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:277a605aed",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          290.74,
+          -414.0,
+          -119.51
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "C0A99716-CF74-4F6C-9FCA-3EF52E13E327"
+      },
+      "telemetry": {
+        "dimensions": [
+          172.0,
+          58.1,
+          230.9
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:e7ec5f05d9",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          -37.07,
+          -615.51,
+          -108.22
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "62273FEE-E5ED-4397-860F-149E6E5BF2BD"
+      },
+      "telemetry": {
+        "dimensions": [
+          102.5,
+          80.7,
+          59.1
+        ]
+      }
+    },
+    {
+      "id": "cell:furniture:46ff2c5689",
+      "kind": "furniture",
+      "story": 0,
+      "geometry": {
+        "position": [
+          254.03,
+          -250.22,
+          -97.81
+        ]
+      },
+      "attrs": {
+        "label": "object",
+        "roomplan-category": "",
+        "origin": "0B992903-EA9F-428E-BD60-B894C9BFA3B4"
+      },
+      "telemetry": {
+        "dimensions": [
+          181.3,
+          101.5,
+          71.8
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e:0001",
+      "kind": "hosted-in",
+      "src": "cell:door:d6ea820988",
+      "dst": "cell:wall:9c2243ea4a",
+      "weight": 41.73
+    },
+    {
+      "id": "e:0002",
+      "kind": "hosted-in",
+      "src": "cell:door:42b340b880",
+      "dst": "cell:wall:dc785704ba",
+      "weight": 79.63
+    },
+    {
+      "id": "e:0003",
+      "kind": "hosted-in",
+      "src": "cell:door:182df6c372",
+      "dst": "cell:wall:91fba4729d",
+      "weight": 48.28
+    },
+    {
+      "id": "e:0004",
+      "kind": "hosted-in",
+      "src": "cell:door:a61017f724",
+      "dst": "cell:wall:ab1bb866a7",
+      "weight": 110.47
+    },
+    {
+      "id": "e:0005",
+      "kind": "hosted-in",
+      "src": "cell:window:9bbc1e3974",
+      "dst": "cell:wall:1adb743dae",
+      "weight": 152.0
+    },
+    {
+      "id": "e:0006",
+      "kind": "hosted-in",
+      "src": "cell:window:1de36a9868",
+      "dst": "cell:wall:5c4292f714",
+      "weight": 92.39
+    },
+    {
+      "id": "e:0007",
+      "kind": "hosted-in",
+      "src": "cell:window:4301b6d990",
+      "dst": "cell:wall:170c7252b6",
+      "weight": 83.78
+    },
+    {
+      "id": "e:0008",
+      "kind": "hosted-in",
+      "src": "cell:window:c9a429b4dd",
+      "dst": "cell:wall:8850b387b3",
+      "weight": 120.4
+    },
+    {
+      "id": "e:0009",
+      "kind": "joined-at",
+      "src": "cell:wall:1adb743dae",
+      "dst": "cell:wall:22a11262cc"
+    },
+    {
+      "id": "e:0010",
+      "kind": "joined-at",
+      "src": "cell:wall:1adb743dae",
+      "dst": "cell:wall:5c4292f714"
+    },
+    {
+      "id": "e:0011",
+      "kind": "joined-at",
+      "src": "cell:wall:22a11262cc",
+      "dst": "cell:wall:9c2243ea4a"
+    },
+    {
+      "id": "e:0012",
+      "kind": "joined-at",
+      "src": "cell:wall:22a11262cc",
+      "dst": "cell:wall:ab1bb866a7"
+    },
+    {
+      "id": "e:0013",
+      "kind": "joined-at",
+      "src": "cell:wall:5c4292f714",
+      "dst": "cell:wall:2404060e5e"
+    },
+    {
+      "id": "e:0014",
+      "kind": "joined-at",
+      "src": "cell:wall:170c7252b6",
+      "dst": "cell:wall:cb23bc36d2"
+    },
+    {
+      "id": "e:0015",
+      "kind": "joined-at",
+      "src": "cell:wall:170c7252b6",
+      "dst": "cell:wall:8850b387b3"
+    },
+    {
+      "id": "e:0016",
+      "kind": "joined-at",
+      "src": "cell:wall:9c2243ea4a",
+      "dst": "cell:wall:978c3a7400"
+    },
+    {
+      "id": "e:0017",
+      "kind": "joined-at",
+      "src": "cell:wall:9c2243ea4a",
+      "dst": "cell:wall:ab1bb866a7"
+    },
+    {
+      "id": "e:0018",
+      "kind": "joined-at",
+      "src": "cell:wall:eb82f61820",
+      "dst": "cell:wall:45605f57cd"
+    },
+    {
+      "id": "e:0019",
+      "kind": "joined-at",
+      "src": "cell:wall:eb82f61820",
+      "dst": "cell:wall:8850b387b3"
+    },
+    {
+      "id": "e:0020",
+      "kind": "joined-at",
+      "src": "cell:wall:45605f57cd",
+      "dst": "cell:wall:8e095c8636"
+    },
+    {
+      "id": "e:0021",
+      "kind": "joined-at",
+      "src": "cell:wall:23e54aea27",
+      "dst": "cell:wall:8883291f8d"
+    },
+    {
+      "id": "e:0022",
+      "kind": "joined-at",
+      "src": "cell:wall:2404060e5e",
+      "dst": "cell:wall:b5b071f3ac"
+    },
+    {
+      "id": "e:0023",
+      "kind": "joined-at",
+      "src": "cell:wall:2404060e5e",
+      "dst": "cell:wall:ab1bb866a7"
+    },
+    {
+      "id": "e:0024",
+      "kind": "joined-at",
+      "src": "cell:wall:cb23bc36d2",
+      "dst": "cell:wall:962d376294"
+    },
+    {
+      "id": "e:0025",
+      "kind": "joined-at",
+      "src": "cell:wall:cb23bc36d2",
+      "dst": "cell:wall:b5b071f3ac"
+    },
+    {
+      "id": "e:0026",
+      "kind": "joined-at",
+      "src": "cell:wall:962d376294",
+      "dst": "cell:wall:b5b071f3ac"
+    },
+    {
+      "id": "e:0027",
+      "kind": "joined-at",
+      "src": "cell:wall:962d376294",
+      "dst": "cell:wall:91fba4729d"
+    },
+    {
+      "id": "e:0028",
+      "kind": "joined-at",
+      "src": "cell:wall:b5b071f3ac",
+      "dst": "cell:wall:ab1bb866a7"
+    },
+    {
+      "id": "e:0029",
+      "kind": "joined-at",
+      "src": "cell:wall:04354a48b5",
+      "dst": "cell:wall:8883291f8d"
+    },
+    {
+      "id": "e:0030",
+      "kind": "joined-at",
+      "src": "cell:wall:04354a48b5",
+      "dst": "cell:wall:8e095c8636"
+    },
+    {
+      "id": "e:0031",
+      "kind": "joined-at",
+      "src": "cell:wall:04354a48b5",
+      "dst": "cell:wall:dc785704ba"
+    },
+    {
+      "id": "e:0032",
+      "kind": "joined-at",
+      "src": "cell:wall:04354a48b5",
+      "dst": "cell:wall:91fba4729d"
+    },
+    {
+      "id": "e:0033",
+      "kind": "joined-at",
+      "src": "cell:wall:8883291f8d",
+      "dst": "cell:wall:8e095c8636"
+    },
+    {
+      "id": "e:0034",
+      "kind": "joined-at",
+      "src": "cell:wall:dc785704ba",
+      "dst": "cell:wall:91fba4729d"
+    },
+    {
+      "id": "e:0035",
+      "kind": "placed-in",
+      "src": "cell:furniture:51a43734fb",
+      "dst": "cell:room:feee767661",
+      "weight": 167.81
+    },
+    {
+      "id": "e:0036",
+      "kind": "placed-in",
+      "src": "cell:furniture:1ac1c0b4ea",
+      "dst": "cell:room:feee767661",
+      "weight": 132.51
+    },
+    {
+      "id": "e:0037",
+      "kind": "placed-in",
+      "src": "cell:furniture:dcdda71149",
+      "dst": "cell:room:feee767661",
+      "weight": 214.11
+    },
+    {
+      "id": "e:0038",
+      "kind": "placed-in",
+      "src": "cell:furniture:12006a9ce5",
+      "dst": "cell:room:7e1e6405a1",
+      "weight": 65.44
+    },
+    {
+      "id": "e:0039",
+      "kind": "placed-in",
+      "src": "cell:furniture:b3402b57dd",
+      "dst": "cell:room:7e1e6405a1",
+      "weight": 118.54
+    },
+    {
+      "id": "e:0040",
+      "kind": "placed-in",
+      "src": "cell:furniture:c53e254438",
+      "dst": "cell:room:a7507b32d3",
+      "weight": 181.35
+    },
+    {
+      "id": "e:0041",
+      "kind": "placed-in",
+      "src": "cell:furniture:ad64598e94",
+      "dst": "cell:room:a7507b32d3",
+      "weight": 74.22
+    },
+    {
+      "id": "e:0042",
+      "kind": "placed-in",
+      "src": "cell:furniture:b2cebb193e",
+      "dst": "cell:room:7e1e6405a1",
+      "weight": 68.49
+    },
+    {
+      "id": "e:0043",
+      "kind": "placed-in",
+      "src": "cell:furniture:5133bb69eb",
+      "dst": "cell:room:7e1e6405a1",
+      "weight": 107.67
+    },
+    {
+      "id": "e:0044",
+      "kind": "placed-in",
+      "src": "cell:furniture:bab9938149",
+      "dst": "cell:room:feee767661",
+      "weight": 191.98
+    },
+    {
+      "id": "e:0045",
+      "kind": "placed-in",
+      "src": "cell:furniture:277a605aed",
+      "dst": "cell:room:feee767661",
+      "weight": 67.66
+    },
+    {
+      "id": "e:0046",
+      "kind": "placed-in",
+      "src": "cell:furniture:e7ec5f05d9",
+      "dst": "cell:room:a7507b32d3",
+      "weight": 183.84
+    },
+    {
+      "id": "e:0047",
+      "kind": "placed-in",
+      "src": "cell:furniture:46ff2c5689",
+      "dst": "cell:room:feee767661",
+      "weight": 193.37
+    },
+    {
+      "id": "e:0048",
+      "kind": "passable",
+      "src": "cell:room:790b13edff",
+      "dst": "cell:door:d6ea820988",
+      "weight": 65.55
+    },
+    {
+      "id": "e:0049",
+      "kind": "passable",
+      "src": "cell:room:7e1e6405a1",
+      "dst": "cell:door:d6ea820988",
+      "weight": 262.01
+    },
+    {
+      "id": "e:0050",
+      "kind": "passable",
+      "src": "cell:room:7e1e6405a1",
+      "dst": "cell:door:42b340b880",
+      "weight": 116.52
+    },
+    {
+      "id": "e:0051",
+      "kind": "passable",
+      "src": "cell:room:a7507b32d3",
+      "dst": "cell:door:42b340b880",
+      "weight": 223.42
+    },
+    {
+      "id": "e:0052",
+      "kind": "passable",
+      "src": "cell:room:a7507b32d3",
+      "dst": "cell:door:182df6c372",
+      "weight": 177.09
+    },
+    {
+      "id": "e:0053",
+      "kind": "passable",
+      "src": "cell:room:790b13edff",
+      "dst": "cell:door:182df6c372",
+      "weight": 204.32
+    },
+    {
+      "id": "e:0054",
+      "kind": "passable",
+      "src": "cell:room:790b13edff",
+      "dst": "cell:door:a61017f724",
+      "weight": 117.49
+    },
+    {
+      "id": "e:0055",
+      "kind": "passable",
+      "src": "cell:room:feee767661",
+      "dst": "cell:door:a61017f724",
+      "weight": 249.84
+    }
+  ],
+  "views": [
+    {
+      "id": "view:plan2d",
+      "kind": "render",
+      "camera": "orthographic-top"
+    },
+    {
+      "id": "view:walk3d",
+      "kind": "camera",
+      "camera": "first-person"
+    },
+    {
+      "id": "view:export",
+      "kind": "render",
+      "camera": "projection",
+      "formats": [
+        "svg",
+        "dxf",
+        "pdf",
+        "png"
+      ]
+    }
+  ],
+  "ticks": [
+    {
+      "id": "tick:snapshot",
+      "kind": "version-history"
+    },
+    {
+      "id": "tick:sim",
+      "kind": "physics"
+    }
+  ],
+  "telemetry": {
+    "counts": {
+      "nodes": 45,
+      "edges": 55,
+      "byKind": {
+        "room": 4,
+        "wall": 20,
+        "door": 4,
+        "window": 4,
+        "furniture": 13
+      },
+      "edgesByKind": {
+        "hosted-in": 8,
+        "joined-at": 26,
+        "placed-in": 13,
+        "passable": 8
+      }
+    },
+    "bounds": {
+      "minX": -332.1,
+      "maxX": 410.0,
+      "minY": -670.2,
+      "maxY": -30.2
+    },
+    "stories": [
+      0
+    ],
+    "units": "cm"
+  }
+}

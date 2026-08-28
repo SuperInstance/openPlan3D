@@ -17,6 +17,37 @@ Design floor plans in an intuitive 2D editor, then instantly preview them in a f
 
 ---
 
+<p align="center">
+  <img src="quilt-twin/docs/quilt-twin-banner.jpg" alt="Quilt-Twin: an openPlan3D plan exploded into a glowing cell graph (navy + amber)" width="100%">
+</p>
+
+## 🧵 Quilt-Twin — a plan is a graph
+
+Every openPlan3D project can be projected onto a **cell graph**: one node per
+placed object (rooms are cells too), edges for the relations that actually
+matter — `hosted-in` (a door cannot exist without its wall), `bounds`,
+`joined-at`, `placed-in`, `passable`. Edits map to a 5+1 opcode set
+(**BIND**=instantiate, **LINK**=parent/constraint, **EFFECT**=transform,
+**VIEW**=render/camera, **TICK**=physics/sim, **FORGET**=delete), cameras become
+VIEWs, and *spatial questions become routing problems* — "nearest reachable
+bathroom" is a Dijkstra over the portal graph, where walls block and doors pass.
+
+```bash
+# project the repo's real RoomPlan scan onto the quilt substrate
+python3 quilt-twin/twin.py test-roomplan.json -o /tmp/cellgraph.json
+# -> twin: 45 nodes / 55 edges (rooms 4, walls 20, doors 4, windows 4, furniture 13)
+
+# route bedroom -> bathroom: room → door → hall → door → room, 694.9 cm
+python3 quilt-twin/query.py /tmp/cellgraph.json route --from label:bedroom --to label:bathroom
+```
+
+Stdlib-only Python, no build step, nothing in the editor changed.
+Full write-up, verified results, and the opcode mapping:
+**[quilt-twin/docs/QUILT-TWIN.md](quilt-twin/docs/QUILT-TWIN.md)**
+
+---
+
+
 ## ✨ Features
 
 ### 🏗️ Drawing Tools
